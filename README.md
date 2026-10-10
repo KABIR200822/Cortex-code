@@ -11,7 +11,7 @@
 
 ## 1. What We Built
 
-**CorteXCode** is a specialized aviation search-and-rescue platform accessible at [CorteXCode.lovable.app](https://CorteXCode.lovable.app). The application processes historical radar streams, telemetry feeds (ADS-B), transponder loss events, and terrain elevation datasets to determine the most probable crash and impact locations of missing aircraft.
+**CorteXCode** is a specialized aviation search-and-rescue platform accessible at [CorteXCode.lovable.app](https://CorteXCode.vercel.com). The application processes historical radar streams, telemetry feeds (ADS-B), transponder loss events, and terrain elevation datasets to determine the most probable crash and impact locations of missing aircraft.
 
 - **Geospatial & Vector Mapping Interface:** A reactive tracking dashboard built with React, TypeScript, and Tailwind CSS to plot flight paths and search radius envelopes.
 - **High-Performance SSR & Server Functions:** Powered by TanStack Start to run trajectory projection algorithms and ingest real-time flight telemetry.

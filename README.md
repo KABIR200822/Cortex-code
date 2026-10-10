@@ -2,7 +2,7 @@
 
 > An emergency flight trajectory tracker and downed-aircraft detection system engineered to estimate, localize, and predict crash coordinates for missing or disappeared aircraft.
 
-[![Live App](https://img.shields.io/badge/Live_Demo-CorteXCode.lovable.app-blue?style=flat&logo=safari)](https://CorteXCode.lovable.app)
+[![Live App](https://img.shields.io/badge/Live_Demo-CorteXCode.lovable.app-blue?style=flat&logo=safari)](https://cortexcode11.vercel.app)
 [![Built with Lovable](https://img.shields.io/badge/Built_with-Lovable-pink?style=flat)](https://lovable.dev)
 [![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Framework](https://img.shields.io/badge/Framework-TanStack_Start-orange?style=flat)](https://tanstack.com/start)
@@ -11,12 +11,12 @@
 
 ## 1. What We Built
 
-**CorteXCode** is a specialized aviation search-and-rescue platform accessible at [CorteXCode.lovable.app](https://CorteXCode.vercel.com). The application processes historical radar streams, telemetry feeds (ADS-B), transponder loss events, and terrain elevation datasets to determine the most probable crash and impact locations of missing aircraft.
+**CorteXCode** is a specialized aviation search-and-rescue platform accessible at [cortexcode11.vercel.app](https://cortexcode.vercel.app). The application processes historical radar streams, telemetry feeds (ADS-B), transponder loss events, and terrain elevation datasets to determine the most probable crash and impact locations of missing aircraft.
 
 - **Geospatial & Vector Mapping Interface:** A reactive tracking dashboard built with React, TypeScript, and Tailwind CSS to plot flight paths and search radius envelopes.
 - **High-Performance SSR & Server Functions:** Powered by TanStack Start to run trajectory projection algorithms and ingest real-time flight telemetry.
 - **Impact Zone Prediction Engine:** Mathematical extrapolations of descent rates, glide ratios, and last-known radar coordinates to pinpoint search grids.
-- **Continuous Deployment Pipeline:** Fully integrated with Lovable and GitHub for rapid updates and collaborative engineering[cite: 6].
+- **Continuous Deployment Pipeline:** Fully integrated with Vercel and GitHub for rapid updates and collaborative engineering[cite: 6].
 
 ---
 

@@ -22,7 +22,7 @@ const navItems = [
   { label: "Signals", href: "#signals" },
   { label: "Team", href: "#cta" },
 ];
-const navCta = { label: "Launch Console", href: "/login" };
+const navCta = { label: "Launch Console", href: "/console" };
 
 const steps = [
   { k: "01", t: "Establish the last known position", d: "Use available coordinates, heading, speed and time of last contact." },
@@ -172,7 +172,7 @@ function Index() {
               Turn the last known flight position and incomplete aircraft data into a map of possible locations, helping search teams prioritize where to investigate first.
             </p>
             <div className="animate-rise mt-8 flex flex-wrap gap-3 font-mono text-xs uppercase tracking-[0.2em]" style={{ animationDelay: "380ms" }}>
-              <a href="/login" target="_blank" rel="noopener noreferrer" className="bg-ink px-6 py-4 text-paper transition-opacity hover:opacity-80">Launch Console <span className="text-signal">→</span></a>
+              <a href="/console" target="_blank" rel="noopener noreferrer" className="bg-ink px-6 py-4 text-paper transition-opacity hover:opacity-80">Launch Console <span className="text-signal">→</span></a>
               <a href="#how" className="border border-ink px-6 py-4 transition-colors hover:bg-ink hover:text-paper">How it works</a>
             </div>
           </div>
@@ -213,7 +213,7 @@ function Index() {
           Make the next search decision more informed.
         </h2>
         <p className="mt-8 max-w-md text-lg text-ink/70">Explore how incomplete flight data can be translated into a structured search plan.</p>
-        <a href="/login" target="_blank" rel="noopener noreferrer" className="mt-12 inline-flex items-center gap-4 bg-ink px-8 py-5 font-mono text-sm uppercase tracking-[0.2em] text-paper transition-transform hover:-translate-y-0.5">
+        <a href="/console" target="_blank" rel="noopener noreferrer" className="mt-12 inline-flex items-center gap-4 bg-ink px-8 py-5 font-mono text-sm uppercase tracking-[0.2em] text-paper transition-transform hover:-translate-y-0.5">
           Open console <span className="text-signal">→</span>
         </a>
         <footer className="mt-32 flex justify-between border-t border-ink/10 pt-6 font-mono text-[11px] uppercase tracking-[0.2em] text-ink/50">

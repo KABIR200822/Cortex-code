@@ -1,14 +1,12 @@
-import { createFileRoute, ClientOnly, useNavigate } from "@tanstack/react-router";
+import { createFileRoute, ClientOnly } from "@tanstack/react-router";
 import { useServerFn } from "@tanstack/react-start";
 import { lazy, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { runModel, validateScenario, SAMPLE_SCENARIO, type ScenarioInput } from "@/lib/searchModel";
 import { estimateFuelPct, searchFlights, type Flight } from "@/lib/flights";
 import { getAircraftType, getFlights } from "@/lib/flights.functions";
-import { supabase } from "@/integrations/supabase/client";
-import { displayNameFromUser } from "@/lib/userName";
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Check, FileText, LoaderCircle, LogOut, Plane, RefreshCw, Search } from "lucide-react";
+import { ArrowRight, Check, FileText, LoaderCircle, Plane, RefreshCw, Search } from "lucide-react";
 import MissionReport from "@/components/console/MissionReport";
 
 const SearchMap = lazy(() => import("@/components/console/SearchMap"));
@@ -59,7 +57,6 @@ function Stat({ k, v, sub, accent }: { k: string; v: string; sub?: string; accen
 const fmt = (n: number | null, d = 0, u = "") => (n == null ? "—" : `${n.toFixed(d)}${u}`);
 
 function Console() {
-  const navigate = useNavigate();
   const [user, setUser] = useState<string | null>(null);
   const [input, setInput] = useState<ScenarioInput>(SAMPLE_SCENARIO);
   const [live, setLive] = useState<LiveState>({ status: "loading" });
@@ -78,16 +75,8 @@ function Console() {
   const fetchType = useServerFn(getAircraftType);
 
   useEffect(() => {
-    let cancelled = false;
-    supabase.auth.getUser().then(({ data }) => {
-      if (cancelled) return;
-      if (!data?.user) navigate({ to: "/login", replace: true });
-      else setUser(displayNameFromUser(data.user));
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [navigate]);
+    setUser("Guest");
+  }, []);
 
   const load = useCallback(async () => {
     setLive({ status: "loading" });
@@ -131,10 +120,6 @@ function Console() {
     planningTimer.current = setTimeout(() => setPlanning("ready"), 900);
   };
 
-  const signOut = () => {
-    supabase.auth.signOut().finally(() => navigate({ to: "/login", replace: true }));
-  };
-
   if (!user) return <main className="min-h-screen bg-paper" />;
 
   const fuel = selected ? estimateFuelPct(selected) : null;
@@ -150,10 +135,7 @@ function Console() {
           </span>
         </a>
         <div className="flex items-center gap-4">
-          <span className="hidden font-mono text-[10px] uppercase tracking-[0.2em] text-ink/60 md:inline">{user}</span>
-          <Button variant="ghost" onClick={signOut} className="border border-ink/25 px-4 py-2 font-mono text-[10px] uppercase tracking-[0.2em] hover:border-ink">
-            <LogOut /> Sign out
-          </Button>
+          <span className="hidden font-mono text-[10px] uppercase tracking-[0.2em] text-ink/60 md:inline">Welcome, {user}</span>
         </div>
       </header>
 

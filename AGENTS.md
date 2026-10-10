@@ -12,3 +12,4 @@
 - Console editorial headings use a dedicated font token so landing-page typography stays unchanged.
 - Live aircraft symbols use Leaflet's canvas renderer to keep large flight feeds interactive without thousands of DOM markers.
 - Selected-flight planning exposes progress and a result while retaining the illustrative local model and its editable assumptions.
+- Vercel deploys use vercel.json (NITRO_PRESET=vercel → .vercel/output); Lovable hosting ignores it and still builds for Cloudflare, so both targets work from one codebase.

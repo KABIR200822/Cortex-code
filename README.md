@@ -8,12 +8,21 @@
 [![Framework](https://img.shields.io/badge/Framework-TanStack_Start-orange?style=flat)](https://tanstack.com/start)
 
 ---
-2392608023-KABIR CHIRAG MUNI/n
-2392608115-MANTENA MOURYA RAGHVA VARMA/n
-2392608036-KARTHIK SWAMY/n
-2392608118-CHANDAN GANTA/n
-2392608091-HARSHWARDHAN BEDASKAR/n
-2392608030-SHASWAT VIBHU/n
+2392608023-KABIR CHIRAG MUNI
+2392608115-MANTENA MOURYA RAGHVA VARMA
+2392608036-KARTHIK SWAMY
+2392608118-CHANDAN GANTA
+2392608091-HARSHWARDHAN BEDASKAR
+2392608030-SHASWAT VIBHU
+
+
+
+
+
+
+
+
+
 ## 1. What We Built
 
 **CorteXCode** is a specialized aviation search-and-rescue platform accessible at [cortexcode11.vercel.app](https://cortexcode.vercel.app). The application processes historical radar streams, telemetry feeds (ADS-B), transponder loss events, and terrain elevation datasets to determine the most probable crash and impact locations of missing aircraft.

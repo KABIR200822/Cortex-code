@@ -92,7 +92,8 @@ graph TD
     API <--> ADSB
     API <--> GIS
     Lovable <-->|Bidirectional Sync| Repo
-```4. How to Run It
+```
+4. How to Run It
 Prerequisites
 Node.js (v18.0.0 or higher)[cite: 6]
 
@@ -158,3 +159,4 @@ Visit [http://localhost:3000](http://localhost:3000) in your browser to interact
 └── tailwind.config.ts      # Tailwind design configuration
 License
 This project is licensed under the MIT License.
+

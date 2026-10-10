@@ -8,7 +8,6 @@
 [![Framework](https://img.shields.io/badge/Framework-TanStack_Start-orange?style=flat)](https://tanstack.com/start)
 
 ---
-USN:       NAME:
 2392608023-KABIR CHIRAG MUNI
 2392608115-MANTENA MOURYA RAGHVA VARMA
 2392608036-KARTHIK SWAMY

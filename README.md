@@ -2,7 +2,7 @@
 
 > An emergency flight trajectory tracker and downed-aircraft detection system engineered to estimate, localize, and predict crash coordinates for missing or disappeared aircraft.
 
-[![Live App](https://img.shields.io/badge/Live_Demo-cortexcode.vercel.app-blue?style=flat&logo=safari)](https://cortexcode11.vercel.app)
+[![Live App](https://img.shields.io/badge/Live_Demo-cortexcode11.vercel.app-blue?style=flat&logo=safari)](https://cortexcode11.vercel.app)
 [![Built with Lovable](https://img.shields.io/badge/Built_with-vercel-pink?style=flat)](https://lovable.dev)
 [![TypeScript](https://img.shields.io/badge/Language-TypeScript-blue?style=flat&logo=typescript)](https://www.typescriptlang.org/)
 [![Framework](https://img.shields.io/badge/Framework-TanStack_Start-orange?style=flat)](https://tanstack.com/start)
